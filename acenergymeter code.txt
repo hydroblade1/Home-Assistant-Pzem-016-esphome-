@@ -1,0 +1,62 @@
+esphome:
+  name: acenergymeter01
+  friendly_name: acenergymeter01
+
+esp8266:
+  board: esp01_1m
+
+#visit techlifetravel.com for more info
+
+wifi:
+  ssid: "YOUR_Wifi_Ssid"
+  password: "YOUR_Wifi_Password"
+  fast_connect: on
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+#Put your api key here ---->>>> "uIjecc30X1wr563ikFUp5L9TX3r5ee2eO00Jp0DqKhU="
+api:
+  encryption:
+    key: "uIjecc30X1wr563ikFUp5L9TX3r5ee2eO00Jp0DqKhU="
+
+#Put your ota password here ---->>>> "92a89cb3c40r4o046ce7ab2aC97c9*O3"
+
+ota:
+  - platform: esphome
+    password: "92a89cb3c40r4o046ce7ab2aC97c9*O3"
+  
+#
+uart:
+  rx_pin: GPIO12
+  tx_pin: GPIO14
+  baud_rate: 9600
+  stop_bits: 1
+
+sensor:
+  - platform: pzemac
+    current:
+      name: "PZEM-016 Current"
+    voltage:
+      name: "PZEM-016 Voltage"
+    energy:
+      name: "PZEM-016 Energy"
+    power:
+      name: "PZEM-016 Power"
+    frequency:
+      name: "PZEM-016 Frequency"
+    power_factor:
+      name: "PZEM-016 Power Factor"
+    update_interval: 1s
+#
+  - platform: wifi_signal
+    name: "esphome006 WiFi signal"
+    update_interval: 60s
+  - platform: uptime
+    name: acenergymeter01 Uptime
+    
+time:
+  - platform: homeassistant
+    id: hass_time
+    
