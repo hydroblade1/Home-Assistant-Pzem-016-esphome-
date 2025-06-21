@@ -1,6 +1,5 @@
-# esphome-jk-bms
-
-ESPHome component to monitor a Jikong Battery Management System (JK-BMS) via UART-TTL or BLE
+# AC Energy Meter Monitoring By Home Assistant (esphome)
+ESPHome component to monitor a Energy Meter Monitoring By Home Assistant
 
 ![photo-on-dashboard](photo-on-dashboard.png)
 
