@@ -1,4 +1,4 @@
-``ccp
+`ccp
 
 esphome:
   name: acenergymeter01
