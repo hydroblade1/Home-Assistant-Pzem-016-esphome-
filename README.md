@@ -2,7 +2,7 @@
 
 ESPHome component to monitor a Jikong Battery Management System (JK-BMS) via UART-TTL or BLE
 
-![Lovelace entities card](lovelace-entities-card.png "Lovelace entities card")
+![photo-on-dashboard](photo-on-dashboard")
 
 ## Supported devices
 
