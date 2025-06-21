@@ -1,4 +1,5 @@
 ``ccp
+
 esphome:
   name: acenergymeter01
   friendly_name: acenergymeter01
